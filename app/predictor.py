@@ -43,8 +43,8 @@ def predecir_medicamento(sintomas: str) -> str:
         descripcion = fila.get("description", "sin descripción")
         tratamiento = fila.get("tratamiento", "tratamiento no especificado")
 
-        return (f"Según los síntomas indicados, se sospecha: **{descripcion}**. "
-                f"Se recomienda el tratamiento: **{tratamiento}** y administrar **{pred}**.")
+        return (f"Según los síntomas indicados, se sospecha: {descripcion}. "
+                f"Se recomienda el tratamiento: {tratamiento} y administrar {pred}.")
 
     except Exception as e:
         print(f"[Error IA] {e}")
