@@ -5,7 +5,7 @@ routes = Blueprint("routes", __name__)
 
 @routes.route("/ia/sugerir", methods=["POST"])
 def sugerir():
-    data = request.get_json()
+    data = request.get_json() or {}
     sintomas = data.get("sintomas", "")
     respuesta = predecir_medicamento(sintomas)
     return jsonify({"respuesta": respuesta})
