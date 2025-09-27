@@ -2,6 +2,7 @@ flask
 flask-cors
 scikit-learn
 pandas
-gunicorn # Recommended for production deployment of Flask apps
+gunicorn
+rapidfuzz # Recommended for production deployment of Flask apps
 # If you're running on Windows and encounter issues with subprocess:
 # pywin32 # (Uncomment if needed, mostly for Windows-specific subprocess issues)
